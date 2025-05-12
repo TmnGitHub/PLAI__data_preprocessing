@@ -231,7 +231,7 @@ def process_double_leg_image_set_sides_zero(sitk_image):
     
     # Preserve the original metadata (spacing, origin, direction)
     left_zero_image.CopyInformation(sitk_image)
-    left_zero_image.CopyInformation(sitk_image)
+    right_zero_image.CopyInformation(sitk_image)
     
     # return right_zero_image, left_zero_image
     return right_zero_image, left_zero_image
